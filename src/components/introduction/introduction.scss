@@ -1,0 +1,25 @@
+@import '../../styles/utilities.scss';
+.infoUser {
+    height: 800px;
+    background-image: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3 {
+        span {
+            font-size: $bigSize;
+            text-align: center;
+            font-family: $mainFont;
+            color: $secondColor;
+            font-weight: bold;
+        }
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        font-weight: normal;
+    }
+    h1 {
+        color: $thirdColor;
+        text-align: center;
+        margin-top: 140px;
+    }
+}

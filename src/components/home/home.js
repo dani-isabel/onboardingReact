@@ -5,7 +5,7 @@ import Header from "../header/header";
 import Login from "../login/login";
 
 const Home = () => {
-const [newName, setNewName] = useState();    
+const [newName, setNewName] = useState();  
 
   const Newname = (name) => {
     setNewName(name);        
