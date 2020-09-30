@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./login.scss";
 
+import { Link } from "react-router-dom";
+
 const Login = ({ name }) => {
   const [valueName, setValueName] = useState("");
   const handleSubmit = (e) => {
@@ -11,6 +13,7 @@ const Login = ({ name }) => {
   };
   return (
     <form className="login" onSubmit={handleSubmit}>
+      <Link to="/intro"><input className="btnSave" type="submit" value="Save" /></Link>
       <input 
         className="input" 
         type="text" 
@@ -18,7 +21,6 @@ const Login = ({ name }) => {
         onChange={e => setValueName(e.target.value)}
         value={valueName}
          />
-      <input className="btnSave" type="submit" value="Save" />
     </form>
   );
 };
