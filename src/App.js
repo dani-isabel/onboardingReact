@@ -10,7 +10,8 @@ function App() {
     <Router>
       <div className="App">
         <Route path = "/" exact component = {Home}/>
-        <Route path = "/intro" component = {() => <Introduction userName={'Carolina'}/>}/>
+        {/* <Route path = "/intro" component = {() => <Introduction userName={'Carolina'}/>}/> */}
+        <Route path = "/intro/:name" component = {Introduction}/>
       </div>
     </Router>
   );

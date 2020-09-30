@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import "./login.scss";
 
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-const Login = ({ name }) => {
+const Login = () => {
+  const history = useHistory();
   const [valueName, setValueName] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (valueName < 3) alert("Ingrese un nombre valido");
-    name(valueName);
-    setValueName("");
+    if (valueName < 3) {
+      alert("Ingrese un nombre valido")
+    }else {
+      console.log(valueName);
+      history.push(`/intro/${valueName}`);
+    };
   };
   return (
     <form className="login" onSubmit={handleSubmit}>
-      <Link to="/intro"><input className="btnSave" type="submit" value="Save" /></Link>
       <input 
         className="input" 
         type="text" 
@@ -21,6 +24,7 @@ const Login = ({ name }) => {
         onChange={e => setValueName(e.target.value)}
         value={valueName}
          />
+         <input className="btnSave" type="submit" value="Save" />
     </form>
   );
 };
