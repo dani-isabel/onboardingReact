@@ -1,0 +1,22 @@
+@import '../../styles/utilities.scss';
+
+.keyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 164px 0 0 17.6%;
+    width: 65%;
+    height: 59px;
+    background-color: $firstColor;
+    border-radius: 30px;
+    box-shadow: -2px 2px 6px $secondColor;
+    border: 1px solid $secondColor;
+    h3 {
+        font-family: $secondFont;
+        a {
+            color: $secondColor;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

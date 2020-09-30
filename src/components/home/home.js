@@ -5,11 +5,6 @@ import Header from "../header/header";
 import Login from "../login/login";
 
 const Home = () => {
-const [newName, setNewName] = useState();    
-
-  const Newname = (name) => {
-    setNewName(name);        
-  };
 
   return (
     <div>
@@ -22,7 +17,7 @@ const [newName, setNewName] = useState();
           alt="welcome"
         />
       </section>
-      <Login name={Newname} />
+      <Login/>
     </div>
   );
 };
