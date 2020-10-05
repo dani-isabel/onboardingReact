@@ -11,7 +11,7 @@ const CareerPath = () => {
     <React.Fragment>
       <Header />
       <PageTitle myClass="section__title" title="Career Path"/>
-      <NextStep myClass="next__btn next"/>
+      <NextStep myClass="next__btn next" route="/triforce"/>
       <div className="career">
         <img
           className="career__img"
