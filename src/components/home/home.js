@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./home.scss";
 
-import Header from "../header/header";
-import Login from "../login/login";
+import Header from "../shared/header/header";
+import Login from "./login/login";
 
 const Home = () => {
-
   return (
     <div>
       <Header />
@@ -13,7 +12,7 @@ const Home = () => {
         <h1>So excited to have you on board!</h1>
         <img
           className="welcome"
-          src={process.env.PUBLIC_URL + "../assets/welcome.png"}
+          src={process.env.PUBLIC_URL + "../assets/img/welcome.png"}
           alt="welcome"
         />
       </section>

@@ -1,0 +1,10 @@
+@import '../../../styles/utilities.scss';
+
+.section__title {
+    font-family: $secondFont;
+    color: $thirdColor;
+    max-width: 11.2%;
+    margin: 4vh 0 0 16%;
+    position: absolute;
+    top: 0px;
+}

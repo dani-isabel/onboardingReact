@@ -1,0 +1,19 @@
+@import '../../../styles/utilities.scss';
+.next__btn {
+    width: 4.7%;
+    height: 60px;
+    background: linear-gradient(225deg, $secondColor 0%, $thirdColor 50%, $thirdColor 70%);
+    border-radius: 30px;
+    border: none;
+    font-size: $bigSize;
+    color: $secondColor;
+    font-weight: bold;
+    box-shadow: 1px 1px 4px $textColor;
+    position: absolute;
+    right: 13%;
+    bottom: 3%;
+    &:hover {
+        background: linear-gradient(45deg, $secondColor 0%, $thirdColor 50%, $thirdColor 70%);
+        color: white;
+    }
+}

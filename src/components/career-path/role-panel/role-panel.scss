@@ -1,0 +1,60 @@
+@import '../../../styles/utilities.scss';
+
+#expansion {
+    margin-bottom: 5vh;
+    color: #FFFFFF;        
+    .expansion-heading{
+        font-size: 26px;
+        font-weight: 600;
+        font-family: "PT Sans", sans-serif;
+    }
+    .expansion-p{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }    
+}
+.MuiAccordionSummary-root {
+    background: $firstColor 0% 0% no-repeat padding-box !important;
+    box-shadow: -2px 2px 6px $secondColor !important;
+    border: 1px solid $secondColor !important;
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+    &:hover {
+        background-color: $thirdColor !important;
+    }
+    &:focus {
+        background-color: $thirdColor !important;
+    }
+}
+.MuiPaper-elevation1 {
+    box-shadow: none !important;
+}
+.MuiSvgIcon-root{
+    width: 3em !important;
+    height: 3em !important;
+    color: $secondColor;
+    position: absolute;
+}
+.MuiIconButton-edgeEnd {
+    margin-right: 25px !important;
+}
+.MuiAccordionDetails-root {
+    border: 1px solid $thirdColor;
+    border-radius: 5px;
+    background: $inputColor 0% 0% no-repeat padding-box;
+    box-shadow: -2px 2px 6px $thirdColor;
+    color: $textColor;    
+    position: absolute;
+    z-index: 3;
+    width: 93%;
+    justify-content: space-around;
+    text-align: center;
+}
+.MuiAccordionSummary-content{
+    margin: 10px 0px !important;
+}

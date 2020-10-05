@@ -9,7 +9,7 @@ const Header = () => {
       <Link to="/">
       <img
         className="logo"
-        src={process.env.PUBLIC_URL + "../assets/logo.png"}
+        src={process.env.PUBLIC_URL + "../assets/img/logo.png"}
         alt="logo"
       />
       </Link>
