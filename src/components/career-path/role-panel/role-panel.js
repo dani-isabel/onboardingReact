@@ -6,25 +6,24 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "./role-panel.scss";
 
-const RolePanel = ({ title, roles }) => {
+const RolePanel = ({ title, branches }) => {
   return (
     <div>
       <Accordion id="expansion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
         >
           <Typography className="expansion-heading">{title}</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="expansion-p">
-            {roles.map(rol => {
+        <AccordionDetails>          
+            {branches.map(branch => {
               return (
-                <React.Fragment>{rol} <br /></React.Fragment>
+                <Typography className="expansion-p">
+                  {branch.map(rol => <React.Fragment>{rol} <br/></React.Fragment>)}                  
+                </Typography>
                 ) 
-            })}
-          </Typography>
+            })}          
         </AccordionDetails>
       </Accordion>
     </div>

@@ -10,7 +10,10 @@
     }
     .expansion-p{
         font-size: 18px;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }    
 }
 .MuiAccordionSummary-root {
     background: $firstColor 0% 0% no-repeat padding-box !important;
@@ -21,6 +24,12 @@
     -moz-border-radius: 20px !important;
     -ms-border-radius: 20px !important;
     -o-border-radius: 20px !important;
+    &:hover {
+        background-color: $thirdColor !important;
+    }
+    &:focus {
+        background-color: $thirdColor !important;
+    }
 }
 .MuiPaper-elevation1 {
     box-shadow: none !important;
@@ -43,4 +52,9 @@
     position: absolute;
     z-index: 3;
     width: 93%;
+    justify-content: space-around;
+    text-align: center;
+}
+.MuiAccordionSummary-content{
+    margin: 10px 0px !important;
 }

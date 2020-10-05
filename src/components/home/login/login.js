@@ -14,7 +14,6 @@ const Login = () => {
     } else if (!pattern.test(valueName)) {
       alert("El nombre solo debe contener letras");
     } else {
-      console.log(valueName);
       history.push(`/intro/${valueName}`);
     }
   };
