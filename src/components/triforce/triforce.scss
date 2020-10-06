@@ -1,0 +1,24 @@
+@import '../../styles/utilities.scss';
+.triforceHeader {
+    height: 19vh;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    p {
+        color: $firstColor;
+        font-size: 1.5em;
+    }
+}
+.tags {
+    position: relative;
+    height: 81vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $inputColor;
+}
+.tags__title {
+    color: $thirdColor;
+    padding: 2.8vh;
+}

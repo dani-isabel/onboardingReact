@@ -7,7 +7,7 @@ import Login from "./login/login";
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header classLogo="logo"/>
       <section>
         <h1>So excited to have you on board!</h1>
         <img

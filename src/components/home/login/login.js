@@ -15,6 +15,8 @@ const Login = () => {
       alert("El nombre solo debe contener letras");
     } else {
       history.push(`/intro/${valueName}`);
+      history.push(`/career/${valueName}`);
+      history.push(`/triforce/${valueName}`);
     }
   };
   return (

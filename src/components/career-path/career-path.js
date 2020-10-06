@@ -9,9 +9,9 @@ import PageTitle from "../shared/page-title/page-title";
 const CareerPath = () => {
   return (
     <React.Fragment>
-      <Header />
+      <Header classLogo="logo"/>
       <PageTitle myClass="section__title" title="Career Path"/>
-      <NextStep myClass="next__btn next" route="/triforce"/>
+      <NextStep myClass="next__btn next" route="/triforce/:name"/>
       <div className="career">
         <img
           className="career__img"

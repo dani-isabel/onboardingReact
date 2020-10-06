@@ -1,4 +1,6 @@
 import React from 'react';
+import './tag-triforce.scss';
+
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -76,19 +78,19 @@ const TagTriforce = () => {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Page One" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Page Two" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} />
+          <LinkTab label="Expertise" href="/drafts" {...a11yProps(0)} />
+          <LinkTab label="Sites" href="/trash" {...a11yProps(1)} />
+          <LinkTab label="Business" href="/spam" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Page One
+        <img className="tag__img" src={process.env.PUBLIC_URL + "../assets/img/uiStudio.png"} alt="expertise"/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Page Two
+        <img className="tag__img" src={process.env.PUBLIC_URL + "../assets/img/cope.png"} alt="sites"/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Page Three
+        <img className="tag__img" src={process.env.PUBLIC_URL + "../assets/img/uiStudio.png"} alt="project"/>
       </TabPanel>
     </div>
   );
