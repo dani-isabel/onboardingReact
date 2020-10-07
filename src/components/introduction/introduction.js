@@ -9,14 +9,14 @@ const Introduction = () => {
   const { name } = useParams();
   return (
     <div className="infoUser">
-      <Header />
+      <Header classLogo="logo"/>
       <h3 className="introduction">
         <span className="userName">{name}</span> already belong to a studio,
         have a <br></br> seniority and probably already work on an specific
         project. <br></br> To understand this better
       </h3>
       <h1>Let's imagine!</h1>
-      <KeyInfo />
+      <KeyInfo name={name}/>
     </div>
   );
 };

@@ -3,12 +3,12 @@ import "./header.scss";
 
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({classLogo}) => {
   return (
     <header>
       <Link to="/">
       <img
-        className="logo"
+        className={classLogo}
         src={process.env.PUBLIC_URL + "../assets/img/logo.png"}
         alt="logo"
       />
