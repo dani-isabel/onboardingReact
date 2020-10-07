@@ -1,0 +1,38 @@
+@import '../../../styles/utilities.scss';
+
+.card {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        color: $firstColor;
+        text-align: center;
+    }
+    img {
+        width: 89%;
+        margin: 3vh 0 3.9vh 0;
+        border-radius: 100%;
+        border: 5px solid $firstColor;
+    }
+    p {
+        color: $textColor;
+        font-family: $secondFont;
+        font-weight: bold;
+    }
+    a {
+        background-color: transparent;
+        border:none;
+        color: $textColor;
+        font-family: $secondFont;
+        text-decoration: underline;
+        &:hover {
+            color:$thirdColor;
+        }
+        &:focus {
+            border: none;
+            color:$thirdColor;
+            outline: none;
+        }
+    }
+}
