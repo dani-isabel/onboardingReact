@@ -19,7 +19,7 @@ const Triforce = () => {
             <section className="tags">
                 <h1 className="tags__title"><span>{name}</span> is here</h1>
                 <TagTriforce/>
-                <NextStep myClass="next__btn next"/>
+                <NextStep myClass="next__btn next" route={`/fci3`}/>
             </section>
         </div>
     )
