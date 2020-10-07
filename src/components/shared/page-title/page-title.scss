@@ -8,10 +8,12 @@
     position: absolute;
     top: 0px;
 }
-
 .triforceHeader__title {
     font-family: $secondFont;
     color: $thirdColor;
     max-width: 11.2%;
     margin: 0 11.2% 0 4.3%;
+}
+.fci__title{
+    max-width: 18%;
 }

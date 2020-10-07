@@ -3,7 +3,7 @@ import "./career-path.scss";
 import { useParams } from "react-router-dom";
 
 import Header from "../shared/header/header";
-import RolePanel from "./role-panel/role-panel";
+import RolePanel from "../shared/panel/panel";
 import NextStep from "../shared/next-step/next-step";
 import PageTitle from "../shared/page-title/page-title";
 
