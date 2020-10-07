@@ -1,5 +1,6 @@
 import React from "react";
 import "./career-path.scss";
+import { useParams } from "react-router-dom";
 
 import Header from "../shared/header/header";
 import RolePanel from "./role-panel/role-panel";
@@ -7,11 +8,12 @@ import NextStep from "../shared/next-step/next-step";
 import PageTitle from "../shared/page-title/page-title";
 
 const CareerPath = () => {
+  const { name } = useParams();
   return (
     <React.Fragment>
       <Header classLogo="logo"/>
       <PageTitle myClass="section__title" title="Career Path"/>
-      <NextStep myClass="next__btn next" route="/triforce/:name"/>
+      <NextStep myClass="next__btn next" route={`/triforce/${name}`}/>
       <div className="career">
         <img
           className="career__img"

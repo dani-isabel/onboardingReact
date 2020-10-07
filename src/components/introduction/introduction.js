@@ -16,7 +16,7 @@ const Introduction = () => {
         project. <br></br> To understand this better
       </h3>
       <h1>Let's imagine!</h1>
-      <KeyInfo/>
+      <KeyInfo name={name}/>
     </div>
   );
 };

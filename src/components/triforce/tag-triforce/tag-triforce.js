@@ -90,7 +90,7 @@ const TagTriforce = () => {
         <img className="tag__img" src={process.env.PUBLIC_URL + "../assets/img/cope.png"} alt="sites"/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <img className="tag__img" src={process.env.PUBLIC_URL + "../assets/img/uiStudio.png"} alt="project"/>
+        <img className="tag__img" src={process.env.PUBLIC_URL + "../assets/img/project.png"} alt="project"/>
       </TabPanel>
     </div>
   );
