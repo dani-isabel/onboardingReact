@@ -1,0 +1,12 @@
+@import '../../styles/utilities.scss';
+.keyPeople {
+    padding: 0 10.4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 54vh;
+    background-color: $inputColor;
+}
+.keyPeople__title {
+    margin: 0 0 4vh 16%;
+}

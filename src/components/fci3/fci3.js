@@ -11,7 +11,7 @@ const Fci3 = () => {
       <React.Fragment>
         <Header classLogo="logo"/>
         <PageTitle myClass="section__title fci__title" title="Globant Values & FCI"/>
-        <NextStep myClass="next__btn next" route={`/...`}/>
+        <NextStep myClass="next__btn next" route={`/people`}/>
         <div className="fci">
           <img
             className="fci__img"

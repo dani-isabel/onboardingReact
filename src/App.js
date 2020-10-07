@@ -7,6 +7,7 @@ import Introduction from './components/introduction/introduction';
 import CareerPath from './components/career-path/career-path';
 import Triforce from './components/triforce/triforce';
 import Fci3 from './components/fci3/fci3';
+import KeyPeople from './components/key-people/keyPeople';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path = "/career/:name" component = {CareerPath}/>
         <Route path = "/triforce/:name" component = { () => <Triforce/>}/>
         <Route path = "/fci3" component = {Fci3}/>
+        <Route path = "/people" component = {KeyPeople}/>
       </div>
     </Router>
   );
