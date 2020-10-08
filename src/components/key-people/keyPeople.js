@@ -20,7 +20,7 @@ const KeyPeople = () => {
                 <Card rolePeople={"UI TDC FOCAL TECH. DIRECTOR"} imgPeople={process.env.PUBLIC_URL + "../assets/img/gabriel.png"} namePeople={"Gabriel Martinez"} emailRoute={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=gabriel.martinez@globant.com"} emailPeople={"@gabo"} />
                 <Card rolePeople={"UI ENGINEERING TECH. MANAGER"} imgPeople={process.env.PUBLIC_URL + "../assets/img/sebastian.png"} namePeople={"Sebastián Gómez"} emailRoute={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=s.gomez@globant.com"} emailPeople={"@s.gomez"} />
             </section>
-            <NextStep myClass="next__btn next" route={`/people`}/>
+            <NextStep myClass="next__btn next" route={`/ready`}/>
         </div>
     )
 }

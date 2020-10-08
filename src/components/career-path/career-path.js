@@ -22,22 +22,26 @@ const CareerPath = () => {
         ></img>
         <div className="career_panels">
           <RolePanel
+            className="expansion-p"
             title="Senior MGMT" 
             branches={[["CTO", "STUDIO PARTNER"], ["CTO", "VP TECH"]]}
           />
           <RolePanel
+            className="level__panel"
             title="Expert & MGM" 
             branches={[
-              ["L6", "", "L5", "", "L4", ""],
+              ["L6", "", "L5", "", "L4"],
               ["SUBJECT MATTER EXPERT", "SUBJECT MATTER EXPERT", "SUBJECT MATTER EXPERT"],
               ["TECHNICAL DIRECTOR", "TECHNICAL MANAGER", "TECHNICAL MANAGER"]
             ]}
           />
           <RolePanel
+            className="level__panel"
             title="Senior" 
             branches={[["L3", "L2", "L1"], ["ARCHITECT", "SOFTWARE DESIGNER", "SENIOR"]]}
           />
           <RolePanel
+            className="expansion-p"
             title="Initial and Mid level" 
             branches={[["SEMI SENIOR ADV", "SEMI SENIOR", "JUNIOR ADV", "JUNIOR"]]}
           />

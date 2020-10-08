@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Header classLogo="logo"/>
-      <section>
+      <section className="home">
         <h1>So excited to have you on board!</h1>
         <img
           className="welcome"

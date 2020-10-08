@@ -7,7 +7,7 @@ const Login = () => {
   const history = useHistory();
   const [valueName, setValueName] = useState("");
   const handleSubmit = (e) => {
-    const pattern = new RegExp("^[A-Z]+$", "i");
+    const pattern = new RegExp('^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$', 'i');
     e.preventDefault();
     if (valueName < 3) {
       alert("El nombre debe contener mínimo 3 caracteres");
