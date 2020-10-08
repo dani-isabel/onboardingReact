@@ -19,6 +19,10 @@
     background-color: $inputColor;
 }
 .tags__title {
+    text-align: center;
     color: $thirdColor;
     padding: 2.8vh;
+    span {
+        font-weight: bold;
+    }
 }

@@ -9,6 +9,7 @@ import Triforce from './components/triforce/triforce';
 import Fci3 from './components/fci3/fci3';
 import KeyPeople from './components/key-people/keyPeople';
 import Ready from './components/ready/ready';
+import Studios from './components/studios/studios';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path = "/fci3" component = {Fci3}/>
         <Route path = "/people" component = {KeyPeople}/>
         <Route path = "/ready" component = {Ready}/>
+        <Route path = "/studios/:name" component = {Studios}/>
       </div>
     </Router>
   );

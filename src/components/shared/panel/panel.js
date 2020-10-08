@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "./panel.scss";
 
-const RolePanel = ({ title, branches }) => {
+const RolePanel = ({ title, branches, className }) => {
   return (
     <div>
       <Accordion id="expansion">
@@ -19,7 +19,7 @@ const RolePanel = ({ title, branches }) => {
         <AccordionDetails>          
             {branches.map(branch => {
               return (
-                <Typography className="expansion-p">
+                <Typography className={className}>
                   {branch.map(rol => <React.Fragment>{rol} <br/></React.Fragment>)}                  
                 </Typography>
                 ) 

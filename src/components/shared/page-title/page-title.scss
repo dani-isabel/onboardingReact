@@ -1,6 +1,7 @@
 @import '../../../styles/utilities.scss';
 
 .section__title {
+    font-weight: bold;
     font-family: $secondFont;
     color: $thirdColor;
     max-width: 11.2%;
@@ -9,6 +10,7 @@
     top: 0px;
 }
 .triforceHeader__title {
+    font-weight: bold;
     font-family: $secondFont;
     color: $thirdColor;
     max-width: 11.2%;

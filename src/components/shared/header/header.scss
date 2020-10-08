@@ -3,9 +3,15 @@ header {
 }
 .logo {
     width: 70px;
-    margin: 3% 0 0 6%; 
+    margin: 3% 0 0 6%;
+    &:hover {
+        filter: brightness(1.2);
+    } 
 }
 .logo__header {
     width: 70px;
     margin: 0 0 0 72px; 
+    &:hover {
+        filter: brightness(1.2);
+    } 
 }

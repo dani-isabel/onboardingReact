@@ -17,12 +17,17 @@ span.MuiTab-wrapper {
     font-family: $secondFont;
     font-size: 1.5em;
     text-transform: capitalize;
+    &:hover {
+        color:white;
+        text-decoration: underline;
+    }
 }
 .MuiTabs-flexContainer {
     background-color: $firstColor;
     height: 8.8vh;
 }
 .MuiTypography-body1 {
+    padding: 2vh 0;
     text-align: center;
     width: 100%;
 }

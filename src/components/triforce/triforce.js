@@ -9,6 +9,7 @@ import TagTriforce from './tag-triforce/tag-triforce';
 
 const Triforce = () => {
     const { name } = useParams();
+    const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
     return (
         <div className="triforce">
             <header className="triforceHeader">
@@ -17,7 +18,7 @@ const Triforce = () => {
                 <p>The three aspects consist of the Studio, TDC and Accounts</p>
             </header>
             <section className="tags">
-                <h1 className="tags__title"><span>{name}</span> is here</h1>
+                <h1 className="tags__title"><span>{nameCapitalized}</span> is here</h1>
                 <TagTriforce/>
                 <NextStep myClass="next__btn next" route={`/fci3`}/>
             </section>

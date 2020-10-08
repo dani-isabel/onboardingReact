@@ -1,12 +1,11 @@
 @import '../../styles/utilities.scss';
 .infoUser {
-    .logo {
-        transform: scaleX(-1);
-    }
-    height: 800px;
+    width: 100%;
+    height: 100vh;
     background-image: url("../../assets/img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 100% 100vh;
     h3 {
         span {
             font-size: $bigSize;
@@ -14,15 +13,18 @@
             font-family: $mainFont;
             color: $secondColor;
             font-weight: bold;
+            margin: 0;
         }
+        max-height: 17vh;
         text-align: center;
         color: white;
         font-size: 2em;
         font-weight: normal;
     }
     h1 {
+        font-weight: bold;
         color: $thirdColor;
         text-align: center;
-        margin-top: 140px;
+        margin: 17.5vh 0 0 0;
     }
 }
