@@ -9,9 +9,9 @@ const Home = () => {
     <div>
       <Header classLogo="logo"/>
       <section className="home">
-        <h1>So excited to have you on board!</h1>
+        <h1 className="home__title">So excited to have you on board!</h1>
         <img
-          className="welcome"
+          className="home__img"
           src={process.env.PUBLIC_URL + "../assets/img/welcome.png"}
           alt="welcome"
         />

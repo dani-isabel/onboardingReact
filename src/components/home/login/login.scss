@@ -1,15 +1,15 @@
 @import '../../../styles/utilities.scss';
 
-.login {
+.login__form {
     margin-top:2.4vh;
     display: flex;
     justify-content: center;
 }
-.input {
+.login__input {
     position: relative;
     padding: 0 0 0 32px;
     width: 38%;
-    height: 58px;
+    height: 7.4vh;
     background: $inputColor;
     box-shadow: -2px 2px 6px $thirdColor;
     border: 1px solid $thirdColor;
@@ -23,12 +23,12 @@
         box-shadow: -5px 5px 10px $thirdColor;
     }
 }
-.btnSave {
+.login__btn {
     position: absolute;
-    margin-left: 14%;
+    margin-left: 13%;
     z-index: 10;
     width: 12.5%;
-    height: 60px;
+    height: 7.4vh;
     background: linear-gradient(225deg, $secondColor 0%, $thirdColor 30%, $thirdColor 70%);
     border-radius: 30px;
     border: none;
@@ -42,3 +42,11 @@
         color: white;
     }
 }
+.login__p {
+    font-family: $secondFont;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $textColor;
+    text-align: center;
+    margin-top: 1vh;
+  }

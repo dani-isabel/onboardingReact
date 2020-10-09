@@ -13,10 +13,13 @@
     border: 1px solid $secondColor;
     h3 {
         font-family: $secondFont;
-        a {
-            color: $secondColor;
-            font-weight: bold;
-            text-decoration: underline;
-        }
+    }
+}
+.keyInfo__link {
+    color: $secondColor;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+        color:$thirdColor;
     }
 }

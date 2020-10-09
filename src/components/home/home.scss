@@ -1,15 +1,15 @@
 @import '../../styles/utilities.scss';
-h1 {
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home__title {
     font-family: $mainFont;
     font-size: $bigSize;
     color: $firstColor;
     margin:0;
 }
-.welcome {
+.home__img {
     max-height: 50.3vh;
-}
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

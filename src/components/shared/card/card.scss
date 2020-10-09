@@ -5,38 +5,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .card__title {
-        font-size: $small;
-        color: $firstColor;
-        text-align: center;
-        font-family: $secondFont;
-        font-weight: bold;
+}
+.card__p {
+    color: $textColor;
+    font-family: $secondFont;
+    font-weight: bold;
+    margin: 0;
+}
+.card__title {
+    font-size: $small;
+    color: $firstColor;
+    text-align: center;
+    font-family: $secondFont;
+    font-weight: bold;
+}
+.card__img {
+    width: 89%;
+    margin: 3vh 0 3.9vh 0;
+    border-radius: 100%;
+    border: 5px solid $firstColor;
+}
+.card__link {
+    background-color: transparent;
+    border:none;
+    color: $textColor;
+    font-family: $secondFont;
+    text-decoration: underline;
+    &:hover {
+        color:$thirdColor;
     }
-    img {
-        width: 89%;
-        margin: 3vh 0 3.9vh 0;
-        border-radius: 100%;
-        border: 5px solid $firstColor;
-    }
-    p {
-        color: $textColor;
-        font-family: $secondFont;
-        font-weight: bold;
-        margin: 0;
-    }
-    a {
-        background-color: transparent;
-        border:none;
-        color: $textColor;
-        font-family: $secondFont;
-        text-decoration: underline;
-        &:hover {
-            color:$thirdColor;
-        }
-        &:focus {
-            border: none;
-            color:$thirdColor;
-            outline: none;
-        }
+    &:focus {
+        border: none;
+        color:$thirdColor;
+        outline: none;
     }
 }
