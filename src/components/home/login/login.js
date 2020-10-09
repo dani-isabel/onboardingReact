@@ -6,28 +6,32 @@ import { useHistory } from "react-router-dom";
 const Login = () => {
   const history = useHistory();
   const [valueName, setValueName] = useState("");
+  const [valueError, setValueError] = useState(false);
   const handleSubmit = (e) => {
     const pattern = new RegExp('^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$', 'i');
     e.preventDefault();
     if (valueName < 3) {
-      alert("El nombre debe contener mínimo 3 caracteres");
+      setValueError("El nombre solo debe contener letras y debe ser mínimo de 3 caracteres");
     } else if (!pattern.test(valueName)) {
-      alert("El nombre solo debe contener letras");
+      setValueError("El nombre solo debe contener letras y debe ser mínimo de 3 caracteres");
     } else {
       history.push(`/intro/${valueName}`);
     }
   };
   return (
-    <form className="login" onSubmit={handleSubmit}>
+    <div>
+    <form className="login__form" onSubmit={handleSubmit} onChange={() => setValueError('')}>
       <input
-        className="input"
+        className="login__input"
         type="text"
         placeholder="Name"
         onChange={(e) => setValueName(e.target.value)}
         value={valueName}
       />
-      <input className="btnSave" type="submit" value="Save" />
+      <input className="login__btn" type="submit" value="Save" />
     </form>
+    <p className="login__p">{valueError}</p>
+    </div>
   );
 };
 

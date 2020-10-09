@@ -20,7 +20,7 @@ const CareerPath = () => {
           src={process.env.PUBLIC_URL + "../assets/img/character.png"}
           alt="character"
         ></img>
-        <div className="career_panels">
+        <div className="career__panels">
           <RolePanel
             className="expansion-p"
             title="Senior MGMT" 
