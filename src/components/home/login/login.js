@@ -10,7 +10,8 @@ const Login = () => {
   const handleSubmit = (e) => {
     const pattern = new RegExp('^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$', 'i');
     e.preventDefault();
-    if (valueName < 3) {
+    console.log(valueName);
+    if (valueName.length < 3) {
       setValueError("El nombre solo debe contener letras y debe ser mínimo de 3 caracteres");
     } else if (!pattern.test(valueName)) {
       setValueError("El nombre solo debe contener letras y debe ser mínimo de 3 caracteres");
