@@ -2,13 +2,18 @@
 .triforceHeader {
     height: 19vh;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     p {
+        margin-right: 12.42%;
         color: $firstColor;
         font-size: 1.5em;
     }
+}
+.triforceHeader__div {
+    display: flex;
+    flex-direction: row;
 }
 .tags {
     position: relative;
@@ -24,5 +29,23 @@
     padding: 2.8vh;
     span {
         font-weight: bold;
+    }
+}
+
+@media (max-width: 425px) {
+    .triforceHeader {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:start;
+        p {
+            font-size: 14px;
+            text-align: center;
+            margin: 2vh 0;
+        }
+    }
+    .tags__title {
+        font-size: 1.5em;
     }
 }

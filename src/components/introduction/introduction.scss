@@ -28,3 +28,38 @@
     font-weight: bold;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .intro {
+      .intro__description {
+          .intro__span {
+            font-size: 25px;
+          }
+          font-size: 1.5em;
+          &:nth-child(2) {
+            padding-top: 8vh;
+          }
+        }
+      .intro__title {
+        margin-top: 17vh;
+        font-size: 30px;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .intro {
+      .intro__description {
+          .intro__span {
+            font-size: 15px;
+          }
+          font-size: 1em;
+          &:nth-child(2) {
+            padding-top: 5vh;
+          }
+        }
+      .intro__title {
+        margin-top: 17vh;
+        font-size: 18px;
+      }
+    }
+  }

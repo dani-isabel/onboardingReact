@@ -19,3 +19,24 @@
 .fci__title{
     max-width: 18%;
 }
+
+@media (max-width: 768px) {
+    .section__title{
+        max-width: 15%;
+        font-size: 2em;
+        margin: 4vh 0 0 15%;
+    }
+}
+
+@media (max-width: 425px) {
+    .section__title {
+        max-width: 30%;
+        font-size: 1.5em;
+        margin: 5vh 0 0 25%;
+    }
+    .triforceHeader__title {
+        max-width: 30%;
+        font-size: 1.5em;
+        margin: 2vh 0 0 5%;
+    }
+}

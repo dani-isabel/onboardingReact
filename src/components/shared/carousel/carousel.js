@@ -13,7 +13,6 @@ const DemoCarousel = ({images,alt}) => {
                             src={image}
                             alt={alt}
                             />
-                        )
                     <Carousel.Caption>
                     </Carousel.Caption>
                 </Carousel.Item>

@@ -13,3 +13,35 @@
 .home__img {
     max-height: 50.3vh;
 }
+
+@media (max-width: 768px) {
+    .home {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home__title {
+        font-size: 1.9em;
+        margin-bottom: 3%;
+    }
+    .home__img {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .home {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home__title {
+        font-size: $small;
+        margin-bottom: 10%;
+    }
+    .home__img {
+        max-height: 34vh;
+    }
+}

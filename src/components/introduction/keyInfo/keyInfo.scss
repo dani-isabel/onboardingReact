@@ -23,3 +23,24 @@
         color:$thirdColor;
     }
 }
+
+@media (max-width: 768px) {
+    .keyInfo {
+      height: 12vh;
+      width: 60%;
+      margin: 20.5vh 0 0 20%;
+      h3 {
+        font-size: 1.2em;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+      .keyInfo {
+        height: 12vh;
+        width: 75%;
+        margin: 20.5vh 0 0 13%;
+        h3 {
+          font-size: 0.7em;
+        }
+      }
+    }

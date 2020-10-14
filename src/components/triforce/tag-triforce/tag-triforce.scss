@@ -35,3 +35,12 @@ span.PrivateTabIndicator-colorSecondary-4 {
     background-color: $thirdColor;
     height: 5px;
 }
+
+@media only screen and (max-width: 426px) {
+    span.MuiTab-wrapper {
+        font-size: 1em;
+    }
+    .MuiTab-fullWidth {
+        max-width: 30%;
+    }
+}

@@ -12,3 +12,24 @@
     max-width: 49.2%;
     margin: 2.6vh 0 0 25.4%;
 }
+
+@media (max-width: 768px) {
+    .studios {
+        background-size: 100% 100%;
+    }
+    .studios__carousel {
+        max-width: 56%;
+        margin: 14vh 0 0 22%;
+    }
+}
+
+@media (max-width: 425px) {
+    .studios {
+        background-size: 100% 100%;
+    }
+    .studios__carousel {
+        max-width: 90%;
+        margin: 14vh 0 0 5%;
+    }
+}
+

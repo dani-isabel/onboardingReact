@@ -13,8 +13,10 @@ const Triforce = () => {
     return (
         <div className="triforce">
             <header className="triforceHeader">
+                <div className="triforceHeader__div">
                 <Header classLogo="logo__header"/>
                 <PageTitle myClass="triforceHeader__title" title="The Triforce"/>
+                </div>
                 <p>The three aspects consist of the Studio, TDC and Accounts</p>
             </header>
             <section className="tags">
